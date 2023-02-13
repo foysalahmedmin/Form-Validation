@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Vlidation.</title>
+    <link rel="stylesheet" href="form css.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Form Vlidation.</h1>
+        <div class="form">
+            <form action="#" class="activeForm" method="get" onsubmit="return validation()">
+                <div class="formGroup">
+                    <label for="fulname">Full Name :</label><br>
+                    <input type="text" name="fulname" id="fulname" placeholder="Write your full naem. " autocomplete="off">
+                     <br> <span class="warningName"></span> <br>
+                </div>
+                <div class="formGroup">
+                    <label for="phonNumber">Phon Number :</label><br>
+                    <input type="text" name="phonNumber" id="phonNumber" placeholder="Write your Phon Number."autocomplete="off">
+                    <br> <span class="warningNumber"></span> <br>
+                </div>
+                <div class="formGroup">
+                    <label for="email">Email :</label><br>
+                    <input type="email" name="email" id="email" placeholder="Write your Email." autocomplete="off">
+                    <br> <span class="warningEmail"></span> <br>
+                </div>
+                <div class="formGroup">
+                    <label for="newPassword">New Password :</label><br>
+                    <input type="text" name="newPassword" id="newPassword" placeholder="Write New Password." autocomplete="off">
+                    <br> <span class="warningPass"></span> <br>
+                </div>
+                <div class="formGroup">
+                    <label for="confirmPassword">Confirm Password :</label><br>
+                    <input type="text" name="confirmPassword" id="confirmPassword" placeholder="Write New Password Again." autocomplete="off">
+                    <br> <span class="warningConPass"></span> <br>
+                </div>
+                <div class="formGroup">
+                    <label for="dob">Date Of Barth :</label><br>
+                    <input type="date" name="dob" id="dob" placeholder="dd-mm-yyyy">
+                    <br> <span class="warningDob"></span> <br>
+                </div>
+                <div class="formGroup inlne">
+                    <label for="dob">Gender :</label><br>
+                    <input type="radio" name="gender" id="gender" value="male"><label for="male" class="label"> Male.</label>
+                    <input type="radio" name="gender" id="gender" value="female"><label for="female" class="label"> Female.</label>
+                    <br> <span class="warningGender"></span> <br>
+                </div>
+                <div class="formGroup inlne">
+                    <label for="checkbox">Interested On :</label><br>
+                    <input type="checkbox" name="checkbox" id="checkbox" value="Educations"><label for="educations" class="label">Educations.</label><br>
+                    <input type="checkbox" name="checkbox" id="checkbox" value="Sports"><label for="sports" class="label">Sports.</label><br>
+                    <input type="checkbox" name="checkbox" id="checkbox" value="Entertainments"><label for="Entertainments" class="label">Entertainments.</label><br>
+                    <input type="checkbox" name="checkbox" id="checkbox" value="Science"><label for="Science" class="label">Science.</label><br>
+                    <input type="checkbox" name="checkbox" id="checkbox" value="Philosophy"><label for="Philosophy" class="label">Philosophy.</label><br>
+                    <br> <span class="warningCheckbox"></span> <br>
+                </div>
+                <div class="formGroup">
+                    <label for="address">Address :</label><br>
+                    <select name="address" id="address" onchange="selectCountry()">
+                        <option value="">Select Your Country.</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Pakisthan">Pakisthan</option>
+                        <option value="Afganstan">Afganstan</option>
+                        <option value="India">India</option>
+                        <option value="usa">USA</option>
+                        <option value="UK">UK</option>
+                    </select>
+                    <select name="DisticAddress" id="DisticAddress" onchange="selectDistic()">
+                        <option value="">Select Your Distic.</option>
+                        <option value="ChandPur">Chand Pur</option>
+                        <option value="Munshiganj">Munshiganj</option>
+                        <option value="Sariatpur">Sariatpur</option>
+                        <option value="Bhula">Bhula</option>
+                        <option value="Feni">Feni</option>
+                        <option value="Cumilla">Cumilla</option>
+                    </select>
+                    <select name="upazilaAddress" id="upazilaAddress">
+                        <option value="">Select Your Upazila.</option>
+                        <option value="ChandPur">Chand Pur</option>
+                        <option value="Munshiganj">Munshiganj</option>
+                        <option value="Sariatpur">Sariatpur</option>
+                        <option value="Bhula">Bhula</option>
+                        <option value="Feni">Feni</option>
+                        <option value="Cumilla">Cumilla</option>
+                    </select>
+                    <br> <span class="warningAddress"></span> <br>
+                </div>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    
+    <script src="validation.js"></script>
+</body>
+</html>
